@@ -1,4 +1,4 @@
-name: Github Pages Deploy
+name: Newsletter Deploy
 
 on:
   push:
