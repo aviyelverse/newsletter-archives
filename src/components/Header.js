@@ -54,8 +54,9 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/signup"
+                <a
+                  href="http://aviyel.com/#login"
+                  target="_blank"
                   className="btn-sm text-white bg-purple-300 hover:bg-purple-600 ml-3  rounded-full"
                 >
                   <span>Subscribe to our Newsletter</span>
@@ -69,7 +70,7 @@ const Header = () => {
                       fillRule="nonzero"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>

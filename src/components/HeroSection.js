@@ -23,12 +23,8 @@ function HerSection() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Aviyel is a community platform that helps open source project
-                communities to monetize and sustain themselves in the long run.
-                Aviyel is commited to get open source projects traction from
-                developers around the world to adopt and maintain them.
+                Aviyel is on a mission to enlighten people about the importance of using open source software and to develop relationships between diverse groups in the open source community.
               </p>
-
               <div
                 className="relative flex justify-center mb-8"
                 data-aos="zoom-y-out"
@@ -45,49 +41,7 @@ function HerSection() {
                 </div>
               </div>
 
-              <section>
-                <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                  <div className="pb-12 md:pb-20">
-                    <div
-                      className="relative bg-purple-600 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden"
-                      data-aos="zoom-y-out"
-                    >
-                      <div
-                        className="absolute right-0 bottom-0 pointer-events-none hidden lg:block"
-                        aria-hidden="true"
-                      ></div>
-
-                      <div className="relative flex flex-col lg:flex-row justify-between items-center">
-                        <div className="text-center lg:text-left lg:max-w-xl">
-                          <h3 className="h3 text-white mb-2">
-                            Subscribe to our fresh Newsletters !
-                          </h3>
-                          <p className="text-gray-100 text-lg mb-6">
-                            Your bimonthly dose of freshly curated tech news!
-                          </p>
-
-                          <form className="w-full lg:w-auto">
-                            <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-xl lg:mx-0">
-                              <input
-                                type="email"
-                                className="w-full appearance-none bg-purple-100 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-black placeholder-gray-500"
-                                placeholder="Enter your email…"
-                                aria-label="Enter your email…"
-                              />
-                              <a
-                                className="btn text-white bg-purple-300 hover:bg-purple-500 shadow"
-                                href="#"
-                              >
-                                Subscribe!
-                              </a>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
+          
             </div>
           </div>
         </div>

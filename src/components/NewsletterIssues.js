@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
+import processPlugins from "tailwindcss/lib/util/processPlugins";
 import SwiftAnimate from "../utils/SwiftAnimate.js";
 
 const NewsletterIssues = () => {
   const [tab, setTab] = useState(1);
-
   const tabs = useRef(null);
 
   const heightFix = () => {
@@ -12,10 +12,10 @@ const NewsletterIssues = () => {
         tabs.current.children[tab - 1].offsetHeight + "px";
     }
   };
-
+  
   useEffect(() => {
     heightFix();
-  }, [tab]);
+  }, [tabs]);
 
   return (
     <section className="relative">
@@ -43,7 +43,10 @@ const NewsletterIssues = () => {
                 <p className="text-xl text-gray-600"></p>
               </div>
               <div className="mb-8 md:mb-0">
-                <a
+                 {/*  */}
+            
+         {/* Tab */}
+         <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                     tab !== 1
                       ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
@@ -57,14 +60,23 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #1
+                      Newsletter issue #22
                     </div>
                     <div className="text-gray-100">
-                      Released Date: November 22nd 2021
+                      Released Date: August 3rd 2022
                     </div>
                   </div>
+                  <div className="flex justify-center items-center w-8 h-8 bg-yellow-500 rounded-full shadow flex-shrink-0 ml-12">
+                    <p>⭐</p>
+                  </div>
                 </a>
-                <a
+      {/* Tab */}
+            {/*  */}
+
+            {/*  */}
+            
+         {/* Tab */}
+         <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                     tab !== 2
                       ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
@@ -78,14 +90,18 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #2
+                      Newsletter issue #21
                     </div>
                     <div className="text-gray-100">
-                      Released Date: December 23rd 2021
+                      Released Date: July 23rd 2022 
                     </div>
                   </div>
                 </a>
-                <a
+      {/* Tab */}
+            {/*  */}
+
+   {/* Tab */}
+   <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                     tab !== 3
                       ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
@@ -99,15 +115,18 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #3
+                      Newsletter issue #20
                     </div>
                     <div className="text-gray-100">
-                      {" "}
-                      Released Date: January 10th 2021
+                      Released Date: July 9th 2022 
                     </div>
                   </div>
                 </a>
-                <a
+      {/* Tab */}
+            {/*  */}
+
+               {/* Tab */}
+         <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                     tab !== 4
                       ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
@@ -121,141 +140,1114 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #19
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: July 6th 2022 
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 5
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(5);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #18
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: June 25th 2022 
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+              {/* Tab */}
+            {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 6
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(6);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #17
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: June 18th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 7
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(7);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #16
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: June 11th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 8
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(8);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #15
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date:  May 2nd 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 9
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(9);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #14
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: April 26th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 10
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(10);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #13
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: April 19th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 11
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(11);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #12
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: April 12th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 12
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(12);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #11
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: April 5th 2022 
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 13
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(13);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #10
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: March 26th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 14
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(14);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #9
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: March 14th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 15
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(15);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #8
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: March 9th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 16
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(16);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #7
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: March 5th 2022 
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 17
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(17);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #6
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: February 23rd 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 18
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(18);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #5
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: February 9th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 19
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(19);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
                       Newsletter issue #4
                     </div>
                     <div className="text-gray-100">
-                      Release Date: January 25th 2021.
+                      Released Date: January 25th 2022 
                     </div>
                   </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-yellow-500 rounded-full shadow flex-shrink-0 ml-3">
-                    <p>⭐</p>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 20
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(20);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #3
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: January 10th 2022
+                    </div>
                   </div>
                 </a>
-              </div>
-            </div>
+      {/* Tab */}
+            {/*  */}
+              {/*  */}
 
-            {/* Tabs items */}
-            <div
-              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
-              data-aos="zoom-y-out"
-              ref={tabs}
-            >
-              <div className="relative flex flex-col text-center lg:text-right">
-                {/* Issues  1 */}
-                <SwiftAnimate
-                  show={tab === 1}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 21
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(21);
+                  }}
                 >
-                  <div className="relative inline-flex flex-col">
-                    <a
-                      href="https://aviyelverse.github.io/newsletter/november-22nd-2021/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        className="md:max-w-none mx-auto rounded transform animate-float"
-                        src={require("../assets/images/issue1.png")}
-                        width="500"
-                        height="462"
-                        alt="Issues"
-                      />
-                    </a>
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #2
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: December 22nd 2021
+                    </div>
                   </div>
-                </SwiftAnimate>
-                {/* Issues  2 */}
-                <SwiftAnimate
-                  show={tab === 2}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
+                </a>
+      {/* Tab */}
+            {/*  */}
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 22
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(22);
+                  }}
                 >
-                  <div className="relative inline-flex flex-col">
-                    <a
-                      href="https://aviyelverse.github.io/newsletter/december-22nd-2021/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        className="md:max-w-none mx-auto rounded transform animate-float"
-                        src={require("../assets/images/issue2.png")}
-                        width="500"
-                        height="462"
-                        alt="Issues"
-                      />
-                    </a>
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #1
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: November 22nd 2021 
+                    </div>
                   </div>
-                </SwiftAnimate>
-                {/* Issues  3 */}
-                <SwiftAnimate
-                  show={tab === 3}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <a
-                      href="https://aviyelverse.github.io/newsletter/january-6th-newsletter/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        className="md:max-w-none mx-auto rounded transform animate-float"
-                        src={require("../assets/images/issue3.png")}
-                        width="500"
-                        height="462"
-                        alt="Issues"
-                      />
-                    </a>
-                  </div>
-                </SwiftAnimate>
-                {/* Issues  4 */}
-                <SwiftAnimate
-                  show={tab === 4}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <a
-                      href="https://aviyelverse.github.io/newsletter/november-22nd-2021/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        href="#"
-                        className="md:max-w-none mx-auto rounded transform animate-float"
-                        src={require("../assets/images/issue4.png")}
-                        width="500"
-                        height="462"
-                        alt="Issues"
-                      />
-                    </a>
-                  </div>
-                </SwiftAnimate>
+                </a>
+      {/* Tab */}
+            {/*  */}
               </div>
+               
             </div>
+  {/* Tabs items */}
+  <div
+       className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
+       data-aos="zoom-y-out"
+       ref={tabs}
+     >
+       <div className="relative flex flex-col text-center lg:text-right">
+         {/* Issues  1 */}
+         <SwiftAnimate
+           show={tab === 1}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href="https://www.swift.com/newsletter/issue-22"
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src="https://user-images.githubusercontent.com/37651620/182332103-57b996b2-7a07-4103-bca7-06b6410b6713.png"
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+           {/* Issues  2*/}
+           <SwiftAnimate
+           show={tab === 2}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+           {/* Issues */}
+           <SwiftAnimate
+           show={tab === 3}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 4}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 5}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 6}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 7}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 8}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 9}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 10}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 11}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 12}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 13}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 14}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 15}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 16}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 17}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 18}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 19}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 20}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 21}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+              {/* Issues */}
+              <SwiftAnimate
+           show={tab === 22}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href=""
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src=""
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+       </div>
+     </div>
+
+       
+ 
+     
           </div>
         </div>
       </div>

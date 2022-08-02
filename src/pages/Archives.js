@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import ArchivesCards from "../components/ArchivesCards";
 
 function Archives() {
   return (
@@ -26,69 +27,29 @@ function Archives() {
               {/* Items */}
               <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
                 {/* 1st issues */}
-                <div className="relative flex flex-col items-center p-6 bg-white rounded-xl shadow-xl">
-                  <a
-                    href="https://aviyelverse.github.io/newsletter/november-22nd-2021/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black">
-                      Newsletter Issue #1
-                    </h4>
-                    <p className="text-gray-600 text-center">
-                      Released Date:November 22nd 2021
-                    </p>
-                  </a>
-                </div>
-
-                {/* 2nd issues */}
-                <div className="relative flex flex-col items-center p-6 bg-white rounded-xl shadow-xl">
-                  <a
-                    href="https://aviyelverse.github.io/newsletter/december-22nd-2021/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black">
-                      Newsletter Issue #2
-                    </h4>
-                    <p className="text-gray-600 text-center">
-                      Released Date:December 23rd 2021
-                    </p>
-                  </a>
-                </div>
-
-                {/* 3rd issues */}
-                <div className="relative flex flex-col items-center p-6 bg-white rounded-xl shadow-xl">
-                  <a
-                    href="https://aviyelverse.github.io/newsletter/january-6th-newsletter/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black">
-                      Newsletter Issue #3
-                    </h4>
-                    <p className="text-gray-600 text-center">
-                      Released Date:January 10th 2022
-                    </p>
-                  </a>
-                </div>
-
-                {/* 4th issues */}
-                <div className="relative flex flex-col items-center p-6 bg-white rounded-xl shadow-xl">
-                  <a
-                    href="https://aviyelverse.github.io/newsletter/january-26th-newsletter/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-black">
-                      Newsletter Issue #4
-                    </h4>
-                    <p className="text-gray-600 text-center">
-                      {" "}
-                      Released Date:January 25th 2022
-                    </p>
-                  </a>
-                </div>
+                
+                <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/november-22nd-2021/" issueNumber="1" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="2" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="3" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="4" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="5" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="6" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="7" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="8" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="9" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="10" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="11" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="12" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="13" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="14" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="15" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="16" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="17" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="18" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="19" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="20" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="21" issueDate="November" />
+                <ArchivesCards newsletterLink="" issueNumber="22" issueDate="November" />
               </div>
             </div>
           </div>

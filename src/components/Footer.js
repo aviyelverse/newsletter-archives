@@ -5,55 +5,32 @@ const Footer = () => {
       <footer>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-10">
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
-            <h6 className="text-gray-800 font-medium mb-2">
-              Sign-up for the Newsletter!{" "}
-            </h6>
             <p className="text-sm text-gray-600 mb-4">
-              Get the freshly brewed news/articles to your inbox.
+            Sign-up to Aviyel to get the freshly brewed newsletter to your inbox.
             </p>
-            <form>
-              <div className="flex flex-wrap mb-4 ">
-                <div className="w-full">
-                  <label
-                    className="block text-sm sr-only "
-                    htmlFor="newsletter"
+            <div className="flex flex-grow mb-6">
+            <ul className="flex flex-grow justify-start flex-wrap items-center">
+              <li>
+                <a
+                  href="http://aviyel.com/#login"
+                  target="_blank"
+                  className="btn-sm text-white bg-purple-300 hover:bg-purple-600 ml-3  rounded"
+                >
+                  <span>Subscribe to our Newsletter</span>
+                  <svg
+                    className="w-3 h-3 fill-current text-purple-600 flex-shrink-0 ml-2 -mr-1"
+                    viewBox="0 0 12 12"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    Email
-                  </label>
-                  <div className="relative flex items-center max-w-xs">
-                    <input
-                      id="newsletter"
-                      type="email"
-                      className="form-input w-full rounded-xl text-gray-800 px-3 py-2 pr-12 text-sm"
-                      placeholder="Enter your email..."
-                      required
+                    <path
+                      d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
+                      fillRule="nonzero"
                     />
-                    <button
-                      type="submit"
-                      className="absolute inset-0 left-auto"
-                      aria-label="Subscribe"
-                    >
-                      <span
-                        className="absolute inset-0 right-auto w-px -ml-px my-2 bg-purple-100"
-                        aria-hidden="true"
-                      ></span>
-                      <svg
-                        className="w-3 h-3 fill-current text-purple-400 mx-3 flex-shrink-0"
-                        viewBox="0 0 12 12"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z"
-                          fillRule="nonzero"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  {/* Success message */}
-                  {/* <p className="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> */}
-                </div>
-              </div>
-            </form>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
           </div>
           <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t-2 border-solid">
             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
