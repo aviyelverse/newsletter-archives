@@ -23,7 +23,7 @@ function HerSection() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Aviyel is on a mission to enlighten people about the importance of using open source software and to develop relationships between diverse groups in the open source community.
+                Build Sustainable Communities & Scale Open Source Projects.
               </p>
               <div
                 className="relative flex justify-center mb-8"
