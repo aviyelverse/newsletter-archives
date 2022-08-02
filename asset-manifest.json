@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.169a8274.css",
+    "main.js": "/static/js/main.d14fc371.js",
+    "static/media/issue4.png": "/static/media/issue4.788865410e2070226bdf.png",
+    "static/media/issue3.png": "/static/media/issue3.277f1cd388b65d086cd8.png",
+    "static/media/Hero.png": "/static/media/Hero.b0c6750127af4fb9443f.png",
+    "static/media/issue2.png": "/static/media/issue2.2ebc43f6c87a00b13e4a.png",
+    "static/media/issue1.png": "/static/media/issue1.3f7f30b3a38c5bdf6979.png",
+    "index.html": "/index.html",
+    "main.169a8274.css.map": "/static/css/main.169a8274.css.map",
+    "main.d14fc371.js.map": "/static/js/main.d14fc371.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.169a8274.css",
+    "static/js/main.d14fc371.js"
+  ]
+}
