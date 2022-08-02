@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import processPlugins from "tailwindcss/lib/util/processPlugins";
 import SwiftAnimate from "../utils/SwiftAnimate.js";
 
 const NewsletterIssues = () => {
