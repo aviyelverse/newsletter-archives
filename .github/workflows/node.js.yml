@@ -11,19 +11,17 @@ on:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+        node-version: [14.15.3]
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm run deploy
+    - name: Install Packages
+      run: npm install
+    - name: Deploy to GH Pages
+      run:  npm run deploy
