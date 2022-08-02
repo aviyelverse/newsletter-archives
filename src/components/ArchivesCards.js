@@ -12,7 +12,7 @@ const ArchivesCards = (props) => {
                       Newsletter Issue #{props.issueNumber}
                     </h4>
                     <p className="text-gray-600 text-center">
-                      Released Date:{props.issueDate}
+                      {props.issueDate}
                     </p>
                   </a>
                 </div>
