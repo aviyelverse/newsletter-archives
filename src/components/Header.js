@@ -57,6 +57,7 @@ const Header = () => {
                 <a
                   href="http://aviyel.com/#login"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-sm text-white bg-purple-300 hover:bg-purple-600 ml-3  rounded-full"
                 >
                   <span>Subscribe</span>
