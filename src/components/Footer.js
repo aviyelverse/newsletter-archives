@@ -15,6 +15,7 @@ const Footer = () => {
                   href="http://aviyel.com/#login"
                   target="_blank"
                   className="btn-sm text-white bg-purple-300 hover:bg-purple-600 ml-3  rounded"
+                  rel="noopener noreferrer"
                 >
                   <span>Subscribe to our Newsletter</span>
                   <svg
@@ -36,9 +37,10 @@ const Footer = () => {
             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
               <li>
                 <a
-                  to="#"
+                  href="#"
                   className="flex justify-center items-center text-blue-400 hover:text-gray-900 bg-blue-100 hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                   aria-label="Twitter"
+                  rel="noopener noreferrer"
                 >
                   <svg
                     className="w-8 h-8 fill-current "
@@ -51,9 +53,10 @@ const Footer = () => {
               </li>
               <li className="ml-4">
                 <a
-                  to="#"
+                  href="#"
                   className="flex justify-center items-center text-white hover:text-gray-900 bg-black hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out"
                   aria-label="Github"
+                  rel="noopener noreferrer"
                 >
                   <svg
                     className="w-8 h-8 fill-current"
