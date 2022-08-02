@@ -67,7 +67,7 @@ const NewsletterIssues = () => {
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-yellow-500 rounded-full shadow flex-shrink-0 ml-12">
-                    <p>⭐</p>
+                    <img src="https://user-images.githubusercontent.com/37651620/182317153-563e73e3-a4ff-4c31-a202-deb1413d8a2d.png" alt=""/>
                   </div>
                 </a>
       {/* Tab */}
@@ -99,7 +99,6 @@ const NewsletterIssues = () => {
                 </a>
       {/* Tab */}
             {/*  */}
-
    {/* Tab */}
    <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
@@ -640,13 +639,13 @@ const NewsletterIssues = () => {
          >
            <div className="relative inline-flex flex-col">
              <a
-               href="https://www.swift.com/newsletter/issue-22"
+               href="https://aviyelverse.github.io/newsletter/august-3rd-newsletter/"
                target="_blank"
                rel="noopener noreferrer"
              >
                <img
                  className="md:max-w-none mx-auto rounded transform animate-float"
-                 src="https://user-images.githubusercontent.com/37651620/182332103-57b996b2-7a07-4103-bca7-06b6410b6713.png"
+                 src="https://user-images.githubusercontent.com/37651620/182344962-071e4a67-ce38-460c-8dfa-062a35b622e0.png"
                  height="462"
                  alt="Issues"
                />
@@ -668,13 +667,13 @@ const NewsletterIssues = () => {
          >
            <div className="relative inline-flex flex-col">
              <a
-               href=""
+               href="https://aviyelverse.github.io/newsletter/july-23rd-newsletter/"
                target="_blank"
                rel="noopener noreferrer"
              >
                <img
                  className="md:max-w-none mx-auto rounded transform animate-float"
-                 src=""
+                 src="https://user-images.githubusercontent.com/37651620/182345417-b2f91d2c-ee5e-4336-adb2-30bc38fbd9b3.png"
                  height="462"
                  alt="Issues"
                />
@@ -696,13 +695,13 @@ const NewsletterIssues = () => {
          >
            <div className="relative inline-flex flex-col">
              <a
-               href=""
+               href="https://aviyelverse.github.io/newsletter/july-9th-newsletter/"
                target="_blank"
                rel="noopener noreferrer"
              >
                <img
                  className="md:max-w-none mx-auto rounded transform animate-float"
-                 src=""
+                 src="https://user-images.githubusercontent.com/37651620/182347279-29c1d369-2c98-4e86-a175-cc0a11841cf2.png"
                  height="462"
                  alt="Issues"
                />
@@ -724,13 +723,13 @@ const NewsletterIssues = () => {
          >
            <div className="relative inline-flex flex-col">
              <a
-               href=""
+               href="https://aviyelverse.github.io/newsletter/july-6th-newsletter/"
                target="_blank"
                rel="noopener noreferrer"
              >
                <img
                  className="md:max-w-none mx-auto rounded transform animate-float"
-                 src=""
+                 src="https://user-images.githubusercontent.com/37651620/182347590-b28dbfd9-6dc6-4dde-882a-3f97f86acc7a.png"
                  height="462"
                  alt="Issues"
                />
@@ -752,13 +751,13 @@ const NewsletterIssues = () => {
          >
            <div className="relative inline-flex flex-col">
              <a
-               href=""
+               href="https://aviyelverse.github.io/newsletter/june-25th-newsletter/"
                target="_blank"
                rel="noopener noreferrer"
              >
                <img
                  className="md:max-w-none mx-auto rounded transform animate-float"
-                 src=""
+                 src="https://user-images.githubusercontent.com/37651620/182347809-695eaf13-0b57-4866-b685-3644c8b72f66.png"
                  height="462"
                  alt="Issues"
                />
@@ -780,13 +779,13 @@ const NewsletterIssues = () => {
          >
            <div className="relative inline-flex flex-col">
              <a
-               href=""
+               href="https://aviyelverse.github.io/newsletter/june-18th-newsletter/"
                target="_blank"
                rel="noopener noreferrer"
              >
                <img
                  className="md:max-w-none mx-auto rounded transform animate-float"
-                 src=""
+                 src="https://user-images.githubusercontent.com/37651620/182348403-e3558f75-bfb9-4d34-8c8f-d19da73dfa3e.png"
                  height="462"
                  alt="Issues"
                />
@@ -808,13 +807,13 @@ const NewsletterIssues = () => {
          >
            <div className="relative inline-flex flex-col">
              <a
-               href=""
+               href="https://aviyelverse.github.io/newsletter/june-11th-newsletter/"
                target="_blank"
                rel="noopener noreferrer"
              >
                <img
                  className="md:max-w-none mx-auto rounded transform animate-float"
-                 src=""
+                 src="https://user-images.githubusercontent.com/37651620/182348696-bb20663f-d797-476e-9dfd-e01471eb0a23.png"
                  height="462"
                  alt="Issues"
                />
