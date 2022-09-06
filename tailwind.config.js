@@ -28,6 +28,9 @@ module.exports = {
           300: "#5AB950",
           400: "#258A19",
         },
+        discordcolor: {
+          100: "#5865F2",
+        }
       },
       boxShadow: {
         xs: "0 0 0 1px rgba(0, 0, 0, 0.16)",
