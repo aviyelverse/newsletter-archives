@@ -14,7 +14,7 @@ const NewsletterIssues = () => {
   
   useEffect(() => {
     heightFix();
-  }, [tabs]);
+  }, [tabs, heightFix]);
 
   return (
     <section className="relative">
@@ -43,9 +43,9 @@ const NewsletterIssues = () => {
               </div>
               <div className="mb-8 md:mb-0">
                  {/*  */}
-            
-         {/* Tab */}
-         <a
+
+     {/* Tab */}
+     <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                     tab !== 1
                       ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
@@ -59,10 +59,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #22
+                      Newsletter issue #24
                     </div>
                     <div className="text-gray-100">
-                      Released Date: August 3rd 2022
+                      Released Date: August 27th 2022
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-yellow-500 rounded-full shadow flex-shrink-0 ml-12">
@@ -70,11 +70,7 @@ const NewsletterIssues = () => {
                   </div>
                 </a>
       {/* Tab */}
-            {/*  */}
-
-            {/*  */}
-            
-         {/* Tab */}
+                    {/* Tab */}
          <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                     tab !== 2
@@ -85,6 +81,58 @@ const NewsletterIssues = () => {
                   onClick={(e) => {
                     e.preventDefault();
                     setTab(2);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #23
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: August 18th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+            
+         {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 3
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(3);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #22
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: August 3rd 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+            {/*  */}
+            
+         {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 4
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(4);
                   }}
                 >
                   <div>
@@ -101,14 +149,14 @@ const NewsletterIssues = () => {
    {/* Tab */}
    <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== 3
+                    tab !== 5
                       ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
                       : "bg-purple-500 border-transparent"
                   }`}
                   href="#0"
                   onClick={(e) => {
                     e.preventDefault();
-                    setTab(3);
+                    setTab(5);
                   }}
                 >
                   <div>
@@ -126,59 +174,6 @@ const NewsletterIssues = () => {
                {/* Tab */}
          <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== 4
-                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
-                      : "bg-purple-500 border-transparent"
-                  }`}
-                  href="#0"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(4);
-                  }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #19
-                    </div>
-                    <div className="text-gray-100">
-                      Released Date: July 6th 2022 
-                    </div>
-                  </div>
-                </a>
-      {/* Tab */}
-            {/*  */}
-
-               {/* Tab */}
-         <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== 5
-                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
-                      : "bg-purple-500 border-transparent"
-                  }`}
-                  href="#0"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(5);
-                  }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #18
-                    </div>
-                    <div className="text-gray-100">
-                      Released Date: June 25th 2022 
-                    </div>
-                  </div>
-                </a>
-      {/* Tab */}
-            {/*  */}
-
-              {/* Tab */}
-            {/*  */}
-
-               {/* Tab */}
-         <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
                     tab !== 6
                       ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
                       : "bg-purple-500 border-transparent"
@@ -191,10 +186,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #17
+                      Newsletter issue #19
                     </div>
                     <div className="text-gray-100">
-                      Released Date: June 18th 2022
+                      Released Date: July 6th 2022 
                     </div>
                   </div>
                 </a>
@@ -216,14 +211,17 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #16
+                      Newsletter issue #18
                     </div>
                     <div className="text-gray-100">
-                      Released Date: June 11th 2022
+                      Released Date: June 25th 2022 
                     </div>
                   </div>
                 </a>
       {/* Tab */}
+            {/*  */}
+
+              {/* Tab */}
             {/*  */}
 
                {/* Tab */}
@@ -241,10 +239,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #15
+                      Newsletter issue #17
                     </div>
                     <div className="text-gray-100">
-                      Released Date:  May 2nd 2022
+                      Released Date: June 18th 2022
                     </div>
                   </div>
                 </a>
@@ -266,10 +264,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #14
+                      Newsletter issue #16
                     </div>
                     <div className="text-gray-100">
-                      Released Date: April 26th 2022
+                      Released Date: June 11th 2022
                     </div>
                   </div>
                 </a>
@@ -291,10 +289,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #13
+                      Newsletter issue #15
                     </div>
                     <div className="text-gray-100">
-                      Released Date: April 19th 2022
+                      Released Date:  May 2nd 2022
                     </div>
                   </div>
                 </a>
@@ -316,10 +314,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #12
+                      Newsletter issue #14
                     </div>
                     <div className="text-gray-100">
-                      Released Date: April 12th 2022
+                      Released Date: April 26th 2022
                     </div>
                   </div>
                 </a>
@@ -341,16 +339,15 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #11
+                      Newsletter issue #13
                     </div>
                     <div className="text-gray-100">
-                      Released Date: April 5th 2022 
+                      Released Date: April 19th 2022
                     </div>
                   </div>
                 </a>
       {/* Tab */}
             {/*  */}
-              {/*  */}
 
                {/* Tab */}
          <a
@@ -367,17 +364,15 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #10
+                      Newsletter issue #12
                     </div>
                     <div className="text-gray-100">
-                      Released Date: March 26th 2022
+                      Released Date: April 12th 2022
                     </div>
                   </div>
                 </a>
       {/* Tab */}
             {/*  */}
-
-              {/*  */}
 
                {/* Tab */}
          <a
@@ -394,10 +389,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #9
+                      Newsletter issue #11
                     </div>
                     <div className="text-gray-100">
-                      Released Date: March 14th 2022
+                      Released Date: April 5th 2022 
                     </div>
                   </div>
                 </a>
@@ -420,10 +415,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #8
+                      Newsletter issue #10
                     </div>
                     <div className="text-gray-100">
-                      Released Date: March 9th 2022
+                      Released Date: March 26th 2022
                     </div>
                   </div>
                 </a>
@@ -447,10 +442,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #7
+                      Newsletter issue #9
                     </div>
                     <div className="text-gray-100">
-                      Released Date: March 5th 2022 
+                      Released Date: March 14th 2022
                     </div>
                   </div>
                 </a>
@@ -473,10 +468,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #6
+                      Newsletter issue #8
                     </div>
                     <div className="text-gray-100">
-                      Released Date: February 23rd 2022
+                      Released Date: March 9th 2022
                     </div>
                   </div>
                 </a>
@@ -500,10 +495,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #5
+                      Newsletter issue #7
                     </div>
                     <div className="text-gray-100">
-                      Released Date: February 9th 2022
+                      Released Date: March 5th 2022 
                     </div>
                   </div>
                 </a>
@@ -526,10 +521,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #4
+                      Newsletter issue #6
                     </div>
                     <div className="text-gray-100">
-                      Released Date: January 25th 2022 
+                      Released Date: February 23rd 2022
                     </div>
                   </div>
                 </a>
@@ -553,10 +548,10 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Newsletter issue #3
+                      Newsletter issue #5
                     </div>
                     <div className="text-gray-100">
-                      Released Date: January 10th 2022
+                      Released Date: February 9th 2022
                     </div>
                   </div>
                 </a>
@@ -579,6 +574,59 @@ const NewsletterIssues = () => {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #4
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: January 25th 2022 
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 22
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(22);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Newsletter issue #3
+                    </div>
+                    <div className="text-gray-100">
+                      Released Date: January 10th 2022
+                    </div>
+                  </div>
+                </a>
+      {/* Tab */}
+            {/*  */}
+              {/*  */}
+
+               {/* Tab */}
+         <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 23
+                      ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
+                      : "bg-purple-500 border-transparent"
+                  }`}
+                  href="#0"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(23);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
                       Newsletter issue #2
                     </div>
                     <div className="text-gray-100">
@@ -593,14 +641,14 @@ const NewsletterIssues = () => {
                {/* Tab */}
          <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
-                    tab !== 22
+                    tab !== 24
                       ? "bg-white shadow-md border-purple-200 hover:shadow-lg"
                       : "bg-purple-500 border-transparent"
                   }`}
                   href="#0"
                   onClick={(e) => {
                     e.preventDefault();
-                    setTab(22);
+                    setTab(24);
                   }}
                 >
                   <div>
@@ -624,9 +672,67 @@ const NewsletterIssues = () => {
        ref={tabs}
      >
        <div className="relative flex flex-col text-center lg:text-right">
+
+
+  {/* Issues  1 */}
+  <SwiftAnimate
+           show={tab === 1}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href="https://aviyelverse.github.io/newsletter/august-27th-newsletter/"
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src="https://user-images.githubusercontent.com/37651620/187387890-b2b8a003-e91c-4816-86ac-6a19e880a138.png"
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
+          {/* Issues  1 */}
+          <SwiftAnimate
+           show={tab === 2}
+           appear={true}
+           className="w-full"
+           enter="transition ease-in-out duration-700 transform order-first"
+           enterStart="opacity-0 translate-y-16"
+           enterEnd="opacity-100 translate-y-0"
+           leave="transition ease-in-out duration-300 transform absolute"
+           leaveStart="opacity-100 translate-y-0"
+           leaveEnd="opacity-0 -translate-y-16"
+         >
+           <div className="relative inline-flex flex-col">
+             <a
+               href="https://aviyelverse.github.io/newsletter/august-18th-newsletter/"
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               <img
+                 className="md:max-w-none mx-auto rounded transform animate-float"
+                 src="https://user-images.githubusercontent.com/37651620/185344131-da6d2ee7-a720-4a04-a71b-1898a7aa7250.png"
+                 height="462"
+                 alt="Issues"
+               />
+             </a>
+           </div>
+         </SwiftAnimate>
+
          {/* Issues  1 */}
          <SwiftAnimate
-           show={tab === 1}
+           show={tab === 3}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -654,7 +760,7 @@ const NewsletterIssues = () => {
 
            {/* Issues  2*/}
            <SwiftAnimate
-           show={tab === 2}
+           show={tab === 4}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -682,7 +788,7 @@ const NewsletterIssues = () => {
 
            {/* Issues */}
            <SwiftAnimate
-           show={tab === 3}
+           show={tab === 5}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -710,7 +816,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 4}
+           show={tab === 6}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -738,7 +844,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 5}
+           show={tab === 7}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -766,7 +872,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 6}
+           show={tab === 8}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -794,7 +900,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 7}
+           show={tab === 9}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -822,7 +928,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 8}
+           show={tab === 10}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -850,7 +956,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 9}
+           show={tab === 11}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -878,7 +984,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 10}
+           show={tab === 12}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -906,7 +1012,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 11}
+           show={tab === 13}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -934,7 +1040,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 12}
+           show={tab === 14}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -962,7 +1068,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 13}
+           show={tab === 15}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -990,7 +1096,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 14}
+           show={tab === 16}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -1018,7 +1124,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 15}
+           show={tab === 17}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -1046,7 +1152,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 16}
+           show={tab === 18}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -1074,7 +1180,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 17}
+           show={tab === 19}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -1102,7 +1208,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 18}
+           show={tab === 20}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -1130,7 +1236,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 19}
+           show={tab === 21}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -1158,7 +1264,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 20}
+           show={tab === 22}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -1186,7 +1292,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 21}
+           show={tab === 23}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"
@@ -1214,7 +1320,7 @@ const NewsletterIssues = () => {
 
               {/* Issues */}
               <SwiftAnimate
-           show={tab === 22}
+           show={tab === 24}
            appear={true}
            className="w-full"
            enter="transition ease-in-out duration-700 transform order-first"

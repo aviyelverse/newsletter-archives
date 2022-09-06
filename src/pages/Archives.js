@@ -50,6 +50,8 @@ function Archives() {
                 <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/july-9th-newsletter/" issueNumber="20" issueDate="Released Date: July 9th 2022" />
                 <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/july-23rd-newsletter/" issueNumber="21" issueDate="Released Date: July 23rd 2022" />
                 <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/august-3rd-newsletter/" issueNumber="22" issueDate="Released Date: August 3rd 2022" />
+                <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/august-18th-newsletter/" issueNumber="23" issueDate="Released Date: August 18th 2022" />
+                <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/august-27th-newsletter/" issueNumber="24" issueDate="Released Date: August 27th 2022" />
               </div>
             </div>
           </div>
