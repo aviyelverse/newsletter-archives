@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
-import NewsletterIssues from "../components/NewsletterIssues";
 import Footer from "../components/Footer";
+import ArchiveCardHome from "../components/ArchiveCardHome";
 
 const Home = () => {
   return (
@@ -10,7 +10,9 @@ const Home = () => {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <NewsletterIssues />
+        {/* <NewsletterIssues /> */}
+        {/* <Archives/> */}
+        <ArchiveCardHome/>
       </main>
       <Footer />
     </div>

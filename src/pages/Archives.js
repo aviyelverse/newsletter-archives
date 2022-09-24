@@ -52,6 +52,7 @@ function Archives() {
                 <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/august-3rd-newsletter/" issueNumber="22" issueDate="Released Date: August 3rd 2022" />
                 <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/august-18th-newsletter/" issueNumber="23" issueDate="Released Date: August 18th 2022" />
                 <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/august-27th-newsletter/" issueNumber="24" issueDate="Released Date: August 27th 2022" />
+                <ArchivesCards newsletterLink="https://aviyelverse.github.io/newsletter/september-12th-newsletter/" issueNumber="25" issueDate="Released Date: September 12th 2022" />
               </div>
             </div>
           </div>
