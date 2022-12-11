@@ -26,9 +26,6 @@ function ArchiveCardHome() {
               {/* Items */}
               <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
                 {/* 1st issues */} 
-                <NewsletterArchivesList newsletterLink="https://aviyelverse.github.io/newsletter/december-7th-newsletter/" issueNumber="29" issueDate="Released Date: December 7th 2022"/>               
-                <NewsletterArchivesList newsletterLink="https://aviyelverse.github.io/newsletter/november-17th-newsletter/" issueNumber="28" issueDate="Released Date: November 17th 2022"/>               
-                <NewsletterArchivesList newsletterLink="https://aviyelverse.github.io/newsletter/november-2nd-newsletter/" issueNumber="27" issueDate="Released Date: November 2nd 2022"/>               
                 <NewsletterArchivesList newsletterLink="https://aviyelverse.github.io/newsletter/september-23rd-newsletter/" issueNumber="26" issueDate="Released Date: September 23rd 2022"/>               
                 <NewsletterArchivesList newsletterLink="https://aviyelverse.github.io/newsletter/september-12th-newsletter/" issueNumber="25" issueDate="Released Date: September 12th 2022"/>
                 <NewsletterArchivesList newsletterLink="https://aviyelverse.github.io/newsletter/august-27th-newsletter/" issueNumber="24" issueDate="Released Date: August 27th 2022" />
